@@ -1,0 +1,28 @@
+{
+  // MKF - Just Knock: activating a locked house door works as always (unlock with the key, pick the
+  // lock); hold the Modifier Key Framework key to knock instead. Whoever is home answers through
+  // the door (Simply Knock SE). Same doors as Simply Knock: an outside door into a house, dwelling
+  // or farm, locked, that you have no key for, and you're not sneaking.
+  // Labels: Interface/Translations/MKF - Just Knock_<LANGUAGE>.txt
+  "version": 5,
+  "rules": [
+    {
+      "id": "knock",
+      "target": "object",
+      "requires": {
+        "type": "door",
+        "locked": true,
+        "interior": false,
+        "destinationKeyword": [
+          "Skyrim.esm|0x1CB85",  // LocTypeHouse
+          "Skyrim.esm|0x130DC",  // LocTypeDwelling
+          "Skyrim.esm|0x18EF0"   // LocTypeFarm
+        ]
+      },
+      "not": { "requiresKey": true, "playerHasKey": true, "playerSneaking": true },
+      "primary":   {},
+      "alternate": { "label": "$MKFJK_Knock", "event": "MKFJK_Knock" },
+      "priority": 0
+    }
+  ]
+}
