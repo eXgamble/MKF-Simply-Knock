@@ -1,13 +1,13 @@
-Scriptname MKFJK_PlayerScript extends ReferenceAlias
-{MKF - Just Knock: the Modifier Key Framework's Knock action on a locked house door runs Simply Knock's own knock.}
+Scriptname MKFSK_PlayerScript extends ReferenceAlias
+{MKF - Simply Knock: the Modifier Key Framework's Knock action on a locked house door runs Simply Knock's own knock.}
 
 Event OnInit()
-	RegisterForModEvent("MKFJK_Knock", "OnKnock")
+	RegisterForModEvent("MKFSK_Knock", "OnKnock")
 EndEvent
 
 ; mod event registrations don't survive a load
 Event OnPlayerLoadGame()
-	RegisterForModEvent("MKFJK_Knock", "OnKnock")
+	RegisterForModEvent("MKFSK_Knock", "OnKnock")
 EndEvent
 
 Event OnKnock(String asEventName, String asRuleId, Float afAction, Form akTarget)
