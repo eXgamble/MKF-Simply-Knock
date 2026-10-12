@@ -7,9 +7,14 @@ modifier key to **Knock** instead. Whoever is home answers through the door and 
 way in ([Simply Knock SE](https://www.nexusmods.com/skyrimspecialedition/mods/14098) does the
 knocking, the voices and the persuasion). No menu pops up in between.
 
-While Knock shows, the prompt tells you how the people who live there feel about you (Friend, Acquaintance,
-Enemy, ...) instead of the lock's level. For a household, it's the friendliest of them, the one Simply Knock
-lets answer first.
+While Knock shows, the line under the house's name tells you where you stand with the people who live there,
+in place of the lock's level:
+
+- **Friend**: one of them is your friend (Friend or better), so they let you in.
+- **Unwelcome**: nobody there is your friend; you'll have to persuade, intimidate or bribe your way in.
+
+That's exactly the line Simply Knock draws: it only asks whether whoever answers is your friend. A friend in the
+household answers first.
 
 The same doors as Simply Knock: an outside door into a house, dwelling or farm that's locked, that you
 have no key for and whose lock can be picked, and you're not sneaking.
