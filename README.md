@@ -5,23 +5,15 @@ Knocking on doors, the [Modifier Key Framework](https://github.com/eXgamble/Modi
 Activating a locked house door works as always: unlock it with its key, or pick the lock. Hold the
 modifier key to **Knock** instead. Whoever is home answers through the door and you can talk your
 way in ([Simply Knock SE](https://www.nexusmods.com/skyrimspecialedition/mods/14098) does the
-knocking, the voices and the persuasion). No menu pops up in between.
-
-While Knock shows, the line under the house's name tells you where you stand with the people who live there,
-in place of the lock's level:
-
-- **Friend**: one of them is your friend (Friend or better), so they let you in.
-- **Unwelcome**: nobody there is your friend; you'll have to persuade, intimidate or bribe your way in.
-
-That's exactly the line Simply Knock draws: it only asks whether whoever answers is your friend. A friend in the
-household answers first.
+knocking, the voices and the persuasion). No menu pops up in between. While Knock shows, the prompt
+shows just the house's name (the lock's level is for picking it).
 
 The same doors as Simply Knock: an outside door into a house, dwelling or farm that's locked, that you
 have no key for and whose lock can be picked, and you're not sneaking.
 
 ## Requirements
 
-- Modifier Key Framework 1.4.0 or newer
+- Modifier Key Framework 1.5.0 or newer
 - Simply Knock SE (and what it needs: SkyUI, PapyrusUtil)
 - powerofthree's Papyrus Extender
 

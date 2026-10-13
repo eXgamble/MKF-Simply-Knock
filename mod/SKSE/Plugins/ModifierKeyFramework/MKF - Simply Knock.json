@@ -2,11 +2,10 @@
   // MKF - Simply Knock: activating a locked house door works as always (unlock with the key, pick the
   // lock); hold the Modifier Key Framework key to knock instead. Whoever is home answers through
   // the door (Simply Knock SE). Same doors as Simply Knock: an outside door into a house, dwelling
-  // or farm, locked, that you have no key for, and you're not sneaking.
-  // While Knock shows, the prompt's last line says whether the people living there count you as a friend (Friend) or
-  // not (Unwelcome), instead of the lock level.
+  // or farm, locked, that you have no key for, and you're not sneaking. While Knock shows, the prompt shows only the
+  // house's name, no lock level ("info": "none").
   // Labels: Interface/Translations/MKF - Simply Knock_<LANGUAGE>.txt
-  "version": 5,
+  "version": 6,
   "rules": [
     {
       "id": "knock",
@@ -23,17 +22,7 @@
       },
       "not": { "requiresKey": true, "playerHasKey": true, "playerSneaking": true },
       "primary":   {},
-      "alternate": {
-        "label": "$MKFSK_Knock",
-        "event": "MKFSK_Knock",
-        // the line under the house name: what Simply Knock makes of whoever lives there. A friend (Friend or
-        // better) lets you in; anyone else needs persuading, intimidating or a bribe.
-        "info": "relationship",
-        "infoLabels": [
-          { "fromRank": 1, "label": "$MKFSK_Friend" },
-          { "label": "$MKFSK_Unwelcome" }
-        ]
-      },
+      "alternate": { "label": "$MKFSK_Knock", "event": "MKFSK_Knock", "info": "none" },
       "priority": 0
     }
   ]
