@@ -13,7 +13,7 @@ have no key for and whose lock can be picked, and you're not sneaking.
 
 ## Requirements
 
-- Modifier Key Framework 1.5.0 or newer
+- Modifier Key Framework 1.8.0 or newer
 - Simply Knock SE (and what it needs: SkyUI, PapyrusUtil)
 - powerofthree's Papyrus Extender
 
